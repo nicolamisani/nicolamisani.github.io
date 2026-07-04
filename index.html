@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nicola Misani</title>
+  <meta name="description" content="Nicola Misani — Researcher (with tenure) at the Department of Management and Technology, Bocconi University, and Vice-Director of ICRIOS. Research on innovation and sustainability." />
+  <meta name="author" content="Nicola Misani" />
+  <link rel="canonical" href="https://nicolamisani.com/" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Nicola Misani" />
+  <meta property="og:description" content="Researcher at Bocconi University. I study innovation and sustainability." />
+  <meta property="og:url" content="https://nicolamisani.com/" />
+  <meta property="og:image" content="https://nicolamisani.com/assets/nicola_misani.jpg" />
+  <meta property="og:site_name" content="Nicola Misani" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Nicola Misani" />
+  <meta name="twitter:description" content="Researcher at Bocconi University. I study innovation and sustainability." />
+  <meta name="twitter:image" content="https://nicolamisani.com/assets/nicola_misani.jpg" />
+
+  <!-- Structured data: identifies the person and links all profiles into one identity -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nicola Misani",
+    "url": "https://nicolamisani.com/",
+    "image": "https://nicolamisani.com/assets/nicola_misani.jpg",
+    "jobTitle": "Researcher (with tenure)",
+    "worksFor": {
+      "@type": "CollegeOrUniversity",
+      "name": "Bocconi University",
+      "url": "https://www.unibocconi.it/"
+    },
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Department of Management and Technology, Bocconi University"
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Bocconi University" },
+      { "@type": "CollegeOrUniversity", "name": "University of Milan" },
+      { "@type": "CollegeOrUniversity", "name": "Radboud University Nijmegen" }
+    ],
+    "knowsAbout": [
+      "Innovation",
+      "Sustainability",
+      "Corporate Social Responsibility",
+      "Sustainable Entrepreneurship",
+      "Venture Capital"
+    ],
+    "sameAs": [
+      "https://faculty.unibocconi.it/nicolamisani/",
+      "https://www.linkedin.com/in/nicolamisani/",
+      "https://scholar.google.com/citations?user=9blfooEAAAAJ&hl=en",
+      "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1062817",
+      "https://www.webofscience.com/wos/author/record/247593"
+    ]
+  }
+  </script>
+
+  <style>
+    /* ---------- Self-hosted fonts ---------- */
+    @font-face { font-family:"IBM Plex Sans"; font-weight:400; font-style:normal;
+      font-display:swap; src:url("assets/fonts/ibm-plex-sans-400.woff2") format("woff2"); }
+    @font-face { font-family:"IBM Plex Sans"; font-weight:500; font-style:normal;
+      font-display:swap; src:url("assets/fonts/ibm-plex-sans-500.woff2") format("woff2"); }
+    @font-face { font-family:"IBM Plex Sans"; font-weight:600; font-style:normal;
+      font-display:swap; src:url("assets/fonts/ibm-plex-sans-600.woff2") format("woff2"); }
+    @font-face { font-family:"IBM Plex Sans"; font-weight:700; font-style:normal;
+      font-display:swap; src:url("assets/fonts/ibm-plex-sans-700.woff2") format("woff2"); }
+
+    :root {
+      --serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
+      --sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --bg: #ffffff;
+      --surface: #f7f6f3;
+      --text: #1c1b19;
+      --muted: #6b6862;
+      --line: #e4e1db;
+      --accent: #7a1f2b;      /* restrained academic maroon */
+      --accent-soft: #f3e7e8;
+      --maxw: 760px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #16151300;
+        --bg: #14130f;
+        --surface: #1e1c18;
+        --text: #eae7e0;
+        --muted: #a49f95;
+        --line: #2c2a25;
+        --accent: #d98a94;
+        --accent-soft: #2a1c1e;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    html, body { overflow-x: hidden; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--serif);
+      font-size: 18px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ---------- Nav ---------- */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: color-mix(in srgb, var(--bg) 88%, transparent);
+      backdrop-filter: saturate(180%) blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    nav .inner {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 8px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 56px;
+    }
+    nav .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px 22px;
+    }
+    nav .links a {
+      font-family: var(--sans);
+      font-size: 14.5px;
+      color: var(--muted);
+      letter-spacing: .3px;
+    }
+    nav .links a:hover { color: var(--accent); text-decoration: none; }
+    @media (max-width: 560px) {
+      nav .links { gap: 8px 16px; }
+    }
+
+    /* ---------- Layout ---------- */
+    main { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+    section { padding: 56px 0; border-top: 1px solid var(--line); }
+    section:first-of-type { border-top: none; }
+    section > h2 {
+      font-size: 22px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent);
+      font-family: var(--sans);
+      font-weight: 700;
+      margin: 0 0 28px;
+    }
+    .section-note {
+      font-family: var(--sans);
+      font-size: 14.5px;
+      color: var(--muted);
+      margin: -16px 0 26px;
+    }
+
+    /* ---------- Hero ---------- */
+    .hero { padding: 64px 0 52px; border-top: none; }
+    .hero-top {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+    }
+    .hero-photo {
+      flex: 0 0 auto;
+      width: 156px;
+      height: 156px;
+      border-radius: 18px;
+      object-fit: cover;
+      border: 1px solid var(--line);
+    }
+    .hero h1 {
+      font-size: 40px;
+      line-height: 1.1;
+      margin: 0 0 8px;
+      letter-spacing: -0.5px;
+    }
+    .hero .role {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: var(--muted);
+      margin: 0 0 4px;
+    }
+    .hero .role strong { color: var(--text); font-weight: 600; }
+    .bio p { margin: 20px 0 0; }
+    @media (max-width: 560px) {
+      .hero-top { flex-direction: column; align-items: center; text-align: center; gap: 20px; }
+      .hero h1 { font-size: 32px; }
+    }
+
+    /* ---------- Social links ---------- */
+    .social {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .social a {
+      font-family: var(--sans);
+      font-size: 14px;
+      padding: 6px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--text);
+      background: var(--surface);
+      transition: border-color .15s, color .15s;
+    }
+    .social a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+    /* ---------- Research ---------- */
+    .wip { margin-bottom: 40px; }
+    .subhead {
+      font-family: var(--sans);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--muted);
+      font-weight: 600;
+      margin: 0 0 18px;
+    }
+    .paper { margin: 0 0 26px; }
+    .paper h3 {
+      font-size: 20px;
+      line-height: 1.35;
+      margin: 0 0 4px;
+      font-weight: 600;
+    }
+    .paper .meta {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--muted);
+      margin: 0 0 6px;
+    }
+    .paper .status {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: 12.5px;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 2px 9px;
+      border-radius: 5px;
+      margin-bottom: 8px;
+    }
+    .paper .abstract { font-size: 16.5px; margin: 8px 0 0; }
+
+    ul.pubs { list-style: none; padding: 0; margin: 0; }
+    ul.pubs li {
+      font-size: 16.5px;
+      padding: 14px 0;
+      border-top: 1px solid var(--line);
+    }
+    ul.pubs li:first-child { border-top: none; }
+    ul.pubs .year {
+      font-family: var(--sans);
+      font-weight: 700;
+      color: var(--accent);
+      font-size: 14px;
+      margin-right: 4px;
+    }
+    ul.pubs em { color: var(--muted); }
+
+    /* ---------- Teaching ---------- */
+    .teach-group { margin-bottom: 24px; }
+    .teach-group h3 {
+      font-size: 18px;
+      margin: 0 0 8px;
+      font-weight: 600;
+    }
+    .teach-group ul { margin: 0; padding-left: 20px; }
+    .teach-group li { margin: 4px 0; font-size: 16.5px; }
+    .teach-group .code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* ---------- CV ---------- */
+    .cv-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--sans);
+      font-size: 15px;
+      padding: 12px 22px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 8px;
+    }
+    .cv-btn:hover { text-decoration: none; opacity: .92; }
+    @media (prefers-color-scheme: dark) { .cv-btn { color: #14130f; } }
+
+    /* ---------- Footer ---------- */
+    footer {
+      border-top: 1px solid var(--line);
+      background: var(--surface);
+      margin-top: 20px;
+    }
+    footer .inner {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 40px 24px;
+      font-family: var(--sans);
+      font-size: 14.5px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+    footer .name { color: var(--text); font-weight: 600; }
+    footer .cols { display: flex; flex-wrap: wrap; gap: 40px 60px; justify-content: space-between; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="inner">
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#in-progress">In progress</a>
+        <a href="#published">Published</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#cv">CV</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===================== HERO / ABOUT ===================== -->
+    <section id="about" class="hero">
+      <div class="hero-top">
+        <img class="hero-photo" src="assets/nicola_misani.jpg" alt="Nicola Misani" />
+        <div>
+          <h1>Nicola Misani</h1>
+          <div class="social">
+            <a href="mailto:nicola.misani@unibocconi.it">Email</a>
+            <a href="https://faculty.unibocconi.it/nicolamisani/">Faculty page</a>
+            <a href="https://www.linkedin.com/in/nicolamisani/">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=9blfooEAAAAJ&hl=en">Google Scholar</a>
+            <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1062817">SSRN</a>
+            <a href="https://www.webofscience.com/wos/author/record/247593">Web of Science</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bio">
+        <p>I am a Researcher (with tenure) at the Department of Management and Technology at Bocconi University and Vice-Director of <a href="https://icrios.unibocconi.eu/">ICRIOS</a>.</p>
+        <p>I study innovation and sustainability. I am interested in the conditions under which business sustainability can succeed. Over the years, I have explored reasons why businesses should be concerned with reducing harm and addressing externalities, the performance implications of adopting sustainability initiatives, including their effects on competitive advantage, and how sustainability builds stakeholder relationships.</p>
+        <p>My current research focuses on sustainable innovations and the factors enabling their emergence in both entrepreneurial ventures and established organizations. I examine what supports the growth and success of these innovations, particularly in areas like decarbonization and other grand challenges.</p>
+        <p>My work has been published in several academic journals including <em>Business Ethics Quarterly</em>, <em>Ecological Economics</em>, <em>International Business Review</em>, <em>Journal of Business Ethics</em>, and <em>Journal of World Business</em>.</p>
+        <p>I earned a degree in Business Administration at Bocconi University and then a degree in Philosophy at the State University of Milan. I received my PhD in Management Sciences from Radboud University Nijmegen in the Netherlands.</p>
+      </div>
+    </section>
+
+    <!-- ===================== IN PROGRESS ===================== -->
+    <section id="in-progress">
+      <h2>In progress</h2>
+
+      <div class="wip">
+        <div class="paper">
+            <h3>Securing Venture Capital for Sustainability-Driven Ventures: An Analysis of Funding Delay</h3>
+            <p class="meta">with Yangyang Cheng and Andrea Fosfuri</p>
+            <span class="status">R&amp;R at Strategic Management Journal (Round 3)</span>
+          <p class="abstract">This study explores the longer time faced by Sustainability-Driven (SD) ventures when seeking investment from Venture Capitalists (VCs). SD ventures pursue a dual mission, generating economic returns while addressing social and environmental challenges. We argue that this dual mission complicates VCs' evaluation of these ventures and sets the stage for possible agency conflicts. Therefore, VCs might postpone investment in SD ventures to reduce uncertainty and mitigate these conflicts. We find evidence that SD ventures experience a longer time in securing VC funding. In addition, and consistent with the theorized mechanism, we find that SD ventures demonstrate greater market traction and growth when securing the first VC round than other ventures, compensating for VC investors' caution around dual missions. The longer time tends to be concentrated in the initial VC round, with no further delays observed in subsequent VC rounds. Finally, we show a negative correlation between time to initial VC round and venture exit and growth.</p>
+        </div>
+
+        <div class="paper">
+            <h3>The Power of Quiet: Limited Partners' Influence on Sustainability Across Venture Capital Funds</h3>
+            <p class="meta">with Qiang Xiong, Andrea Fosfuri, and Yangyang Cheng</p>
+            <span class="status">R&amp;R at Entrepreneurship Theory and Practice (Round 2)</span>
+          <p class="abstract">Sustainability-driven (SD) ventures often require venture capital (VC) to scale, yet conventional VC funds vary widely in their support for such ventures. We argue that this heterogeneity partly originates from the sustainability preferences of limited partners (LPs). Using 6,408 global VC funds and PRI signatory histories, we find that funds with a higher share of PRI-signatory LPs invest in more SD ventures. Within-fund analyses show that increases in LP PRI exposure predict greater accumulated SD investment, consistent with LPs' post-commitment influence through relational governance. The findings reveal how LP preferences propagate through VC funds to affect entrepreneurial finance outcomes.</p>
+        </div>
+
+        <div class="paper">
+            <h3>The Antecedents of Novelty at the Origin of Startups</h3>
+            <span class="status">In preparation for submission</span>
+          <p class="abstract">This study examines the antecedents and implications of startup novelty, focusing on "Distinctiveness at Origin" (DAO), a measure capturing the initial startup's business model. Using a sample of 102,000 startups, the analysis reveals that higher DAO is associated with characteristics such as being a first-time entrepreneur, a woman entrepreneur, lacking an MBA, and being located outside major startup hubs, suggesting that novel startups often emerge under disadvantageous conditions. Business verticals addressing grand challenges, such as AgTech, CleanTech, FemTech, and FoodTech, exhibit higher DAO, reflecting the distinctiveness needed to tackle grand challenges. The findings also show that DAO correlates with poorer startup performance, including innovation and exit rates. This study reveals the burdens of novelty and highlights the importance of balancing distinctiveness with strategic resource acquisition.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PUBLISHED ===================== -->
+    <section id="published">
+      <h2>Published</h2>
+      <p class="section-note">Selected publications. See my <a href="#cv">CV</a> for the complete list.</p>
+      <ul class="pubs">
+        <li><span class="year">2026</span> J. Chang, J. Park, and N. Misani, "What makes MNEs greener? The interplay of family ownership and international external pressures", <em>Management International Review</em>, forthcoming.</li>
+        <li><span class="year">2021</span> A. Russo, S. Pogutz, and N. Misani, "<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/bse.2789">Paving the Road towards Eco-effectiveness: Exploring the Link between GHG Emissions and Firm Performance</a>", <em>Business Strategy and the Environment</em>, 30(7), 3065–3078.</li>
+        <li><span class="year">2020</span> A. Tencati, S. Castaldo, and N. Misani, "<a href="https://www.cambridge.org/core/journals/business-ethics-quarterly/article/abs/qualified-account-of-supererogation-toward-a-better-conceptualization-of-corporate-social-responsibility/E05A4E9EA9569988932127D256AA0F47">A Qualified Account of Supererogation: Toward a Better Conceptualization of Corporate Social Responsibility</a>", <em>Business Ethics Quarterly</em>, 30(2), 250–272.</li>
+        <li><span class="year">2020</span> N. Misani, "Sustainability and Implicit Contracts", in D. Wasieleski and J. Weber (eds.) <em>Business and Society 360 – Sustainability</em>, Emerald Publishing Group, 81–97.</li>
+        <li><span class="year">2017</span> G. Lojacono, N. Misani, and S. Tallman, "<a href="https://www.sciencedirect.com/science/article/pii/S0969593116302207">Offshoring, local market entry, and the strategic context of cross-border alliances: The impact on the governance mode</a>", <em>International Business Review</em>, 26(3), 435–447.</li>
+        <li><span class="year">2016</span> B. Del Bosco and N. Misani, "<a href="https://www.sciencedirect.com/science/article/pii/S109095161630089X">The effect of cross-listing on the environmental, social, and governance performance of firms</a>", <em>Journal of World Business</em>, 51(6), 977–990.</li>
+        <li><span class="year">2015</span> N. Misani and S. Pogutz, "<a href="https://www.sciencedirect.com/science/article/pii/S0921800914003449">Unraveling the effects of environmental outcomes and processes on financial performance: A non-linear approach</a>", <em>Ecological Economics</em>, 109(1), 150–160.</li>
+        <li><span class="year">2011</span> B. Del Bosco and N. Misani, "<a href="https://www.sciencedirect.com/science/article/pii/S0956522110001284">Keeping the enemies close: the contribution of corporate social responsibility to reducing crime against the firm</a>", <em>Scandinavian Journal of Management</em>, 27(1), 87–98.</li>
+        <li><span class="year">2011</span> B. Del Bosco and N. Misani, "<a href="https://link.springer.com/chapter/10.1007/978-90-481-9319-6_7">Private equity as an emerging asset class of responsible investment: Perspectives from agency and resource-based theories</a>", in W. Vandekerckhove et al. (eds.), <em>Responsible Investment in Times of Turmoil</em>, Springer, 113–134.</li>
+        <li><span class="year">2010</span> F. Perrini, S. Castaldo, N. Misani, and A. Tencati, "<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/bse.660">The Impact of Corporate Social Responsibility Associations on Trust in Organic Products Marketed by Mainstream Retailers: A Study of Italian Consumers</a>", <em>Business Strategy and the Environment</em>, 19(8), 512–526.</li>
+        <li><span class="year">2010</span> N. Misani, "<a href="https://www.taylorfrancis.com/chapters/edit/10.4324/9781351279000-4/convergent-divergent-corporate-social-responsibility-nicola-misani">Convergent and Divergent Corporate Social Responsibility</a>", in C. Louche, S.O. Idowu, and W.L. Filho (eds.), <em>Innovative Corporate Social Responsibility: From risk management to value creation</em>, Greenleaf Publishing, 62–83.</li>
+        <li><span class="year">2009</span> S. Castaldo, F. Perrini, N. Misani, and A. Tencati, "<a href="https://link.springer.com/article/10.1007/s10551-008-9669-4">The missing link between corporate social responsibility and consumer trust: the case of Fair Trade products</a>", <em>Journal of Business Ethics</em>, 84(19), 1–15.</li>
+        <li><span class="year">2008</span> S. Pivato, N. Misani, and A. Tencati, "<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-8608.2008.00515.x">The impact of corporate social responsibility on consumer trust</a>", <em>Business Ethics: A European Review</em>, 17(1), 3–13.</li>
+      </ul>
+    </section>
+
+    <!-- ===================== TEACHING ===================== -->
+    <section id="teaching">
+      <h2>Teaching</h2>
+
+      <div class="teach-group">
+        <h3>DBA — Doctorate in Business Administration <span style="font-weight:400;color:var(--muted);font-size:15px;">(SDA Bocconi)</span></h3>
+        <ul>
+          <li><span class="code">11721</span> Corporate Social Responsibility</li>
+        </ul>
+      </div>
+
+      <div class="teach-group">
+        <h3>Summer School <span style="font-weight:400;color:var(--muted);font-size:15px;">(Bocconi University)</span></h3>
+        <ul>
+          <li><span class="code">30501</span> Entrepreneurship Lab</li>
+        </ul>
+      </div>
+
+      <div class="teach-group">
+        <h3>Undergraduate <span style="font-weight:400;color:var(--muted);font-size:15px;">(Bocconi University)</span></h3>
+        <ul>
+          <li><span class="code">30281</span> CSR &amp; Ethics in Business</li>
+          <li><span class="code">30296</span> Global Sustainability Strategy</li>
+          <li><span class="code">30402</span> Principles of Management</li>
+          <li><span class="code">30060</span> Management</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== CV ===================== -->
+    <section id="cv">
+      <h2>Curriculum Vitae</h2>
+      <p>My full curriculum vitae, including complete publications, service, and academic history.</p>
+      <p style="margin-top:22px;">
+        <a class="cv-btn" href="assets/Misani_CV_July_2026.pdf" target="_blank" rel="noopener">
+          Download CV (PDF) ↓
+        </a>
+      </p>
+      <p style="font-size:14px;color:var(--muted);margin-top:12px;font-family:var(--sans);">Last updated: July 2026</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="inner">
+      <div class="cols">
+        <div>
+          <span class="name">Nicola Misani</span><br />
+          Researcher with tenure<br />
+          Department of Management and Technology<br />
+          Università Bocconi
+        </div>
+        <div>
+          4th Floor, Room C2-04<br />
+          Via Roentgen 1<br />
+          20136 Milano, Italy<br />
+          <a href="mailto:nicola.misani@unibocconi.it">nicola.misani@unibocconi.it</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
