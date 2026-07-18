@@ -208,20 +208,28 @@
     .social {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 20px;
+      align-items: center;
+      margin-top: 18px;
+      font-family: var(--sans);
+      font-size: 14.5px;
+      line-height: 1.7;
     }
     .social a {
-      font-family: var(--sans);
-      font-size: 14px;
-      padding: 6px 14px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      color: var(--text);
-      background: var(--surface);
-      transition: border-color .15s, color .15s;
+      color: var(--muted);
+      transition: color .15s;
     }
-    .social a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+    .social a:hover { color: var(--accent); text-decoration: none; }
+    .social a:not(:first-child)::before {
+      content: "·";
+      color: var(--line);
+      margin: 0 10px;
+    }
+    /* footer variant: subtle divider above the secondary links */
+    footer .social {
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+    }
 
     /* ---------- Research ---------- */
     .wip { margin-bottom: 40px; }
@@ -349,12 +357,7 @@
           <div class="social">
             <a href="mailto:nicola.misani@unibocconi.it">Email</a>
             <a href="https://faculty.unibocconi.it/nicolamisani/">Faculty page</a>
-            <a href="https://www.linkedin.com/in/nicolamisani/">LinkedIn</a>
             <a href="https://scholar.google.com/citations?user=9blfooEAAAAJ&hl=en">Google Scholar</a>
-            <a href="https://orcid.org/0000-0003-4748-9109">ORCID</a>
-            <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1062817">SSRN</a>
-            <a href="https://www.researchgate.net/profile/Nicola-Misani">ResearchGate</a>
-            <a href="https://www.webofscience.com/wos/author/rid/D-4970-2009">Web of Science</a>
           </div>
         </div>
       </div>
@@ -473,6 +476,13 @@
           20136 Milano, Italy<br />
           <a href="mailto:nicola.misani@unibocconi.it">nicola.misani@unibocconi.it</a>
         </div>
+      </div>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/nicolamisani/">LinkedIn</a>
+        <a href="https://orcid.org/0000-0003-4748-9109">ORCID</a>
+        <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1062817">SSRN</a>
+        <a href="https://www.researchgate.net/profile/Nicola-Misani">ResearchGate</a>
+        <a href="https://www.webofscience.com/wos/author/rid/D-4970-2009">Web of Science</a>
       </div>
     </div>
   </footer>
