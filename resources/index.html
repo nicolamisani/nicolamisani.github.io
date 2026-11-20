@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resources — Nicola Misani</title>
+  <meta name="description" content="Teaching resources by Nicola Misani (Bocconi University): interactive simulations on sustainability, including LCA Higher or Lower, a game on the carbon footprint of everyday food and drink." />
+  <meta name="author" content="Nicola Misani" />
+  <link rel="canonical" href="https://nicolamisani.com/resources/" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#7a1f2b" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Resources — Nicola Misani" />
+  <meta property="og:description" content="Interactive simulations I use in my sustainability courses at Bocconi University." />
+  <meta property="og:url" content="https://nicolamisani.com/resources/" />
+  <meta property="og:image" content="https://nicolamisani.com/assets/lca-higher-or-lower.png" />
+  <meta property="og:site_name" content="Nicola Misani" />
+  <meta name="twitter:card" content="summary" />
+
+  <style>
+    /* ---------- Self-hosted fonts ---------- */
+    @font-face { font-family:"IBM Plex Sans"; font-weight:400; font-style:normal;
+      font-display:swap; src:url("/assets/fonts/ibm-plex-sans-400.woff2") format("woff2"); }
+    @font-face { font-family:"IBM Plex Sans"; font-weight:500; font-style:normal;
+      font-display:swap; src:url("/assets/fonts/ibm-plex-sans-500.woff2") format("woff2"); }
+    @font-face { font-family:"IBM Plex Sans"; font-weight:600; font-style:normal;
+      font-display:swap; src:url("/assets/fonts/ibm-plex-sans-600.woff2") format("woff2"); }
+    @font-face { font-family:"IBM Plex Sans"; font-weight:700; font-style:normal;
+      font-display:swap; src:url("/assets/fonts/ibm-plex-sans-700.woff2") format("woff2"); }
+
+    :root {
+      --serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
+      --sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --bg: #ffffff;
+      --surface: #f7f6f3;
+      --text: #1c1b19;
+      --muted: #6b6862;
+      --line: #e4e1db;
+      --accent: #7a1f2b;
+      --accent-soft: #f3e7e8;
+      --maxw: 760px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14130f;
+        --surface: #1e1c18;
+        --text: #eae7e0;
+        --muted: #a49f95;
+        --line: #2c2a25;
+        --accent: #d98a94;
+        --accent-soft: #2a1c1e;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html, body { overflow-x: hidden; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--serif);
+      font-size: 18px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ---------- Nav (same as home page) ---------- */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: color-mix(in srgb, var(--bg) 88%, transparent);
+      backdrop-filter: saturate(180%) blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    nav .inner {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 8px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 56px;
+    }
+    nav .links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 22px; }
+    nav .links a {
+      font-family: var(--sans);
+      font-size: 14.5px;
+      color: var(--muted);
+      letter-spacing: .3px;
+    }
+    nav .links a:hover { color: var(--accent); text-decoration: none; }
+    nav .links a[aria-current="page"] { color: var(--accent); }
+    @media (max-width: 560px) { nav .links { gap: 8px 16px; } }
+
+    /* ---------- Layout ---------- */
+    main { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+    .page-head { padding: 64px 0 8px; }
+    .page-head h1 { font-size: 40px; line-height: 1.1; margin: 0 0 12px; letter-spacing: -0.5px; }
+    .page-head p { margin: 0; color: var(--muted); font-size: 17px; }
+    @media (max-width: 560px) { .page-head h1 { font-size: 32px; } }
+
+    section { padding: 48px 0 56px; }
+    section > h2 {
+      font-size: 22px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent);
+      font-family: var(--sans);
+      font-weight: 700;
+      margin: 0 0 28px;
+    }
+
+    /* ---------- Resource card ---------- */
+    .resource {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+      padding: 28px 0;
+      border-top: 1px solid var(--line);
+    }
+    .resource-shot {
+      flex: 0 0 180px;
+      display: block;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      transition: transform .15s, box-shadow .15s;
+    }
+    .resource-shot:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.08); }
+    .resource-shot img { display: block; width: 100%; height: auto; }
+    .resource h3 { font-size: 22px; line-height: 1.3; margin: 0 0 6px; font-weight: 600; }
+    .resource h3 a { color: var(--text); }
+    .resource h3 a:hover { color: var(--accent); text-decoration: none; }
+    .resource .meta {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--muted);
+      margin: 0 0 12px;
+    }
+    .resource p.desc { font-size: 16.5px; margin: 0 0 12px; }
+    .resource .source {
+      font-family: var(--sans);
+      font-size: 13.5px;
+      color: var(--muted);
+      margin: 14px 0 0;
+    }
+    .play-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+      font-family: var(--sans);
+      font-size: 15px;
+      padding: 10px 20px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 8px;
+    }
+    .play-btn:hover { text-decoration: none; opacity: .92; }
+    @media (prefers-color-scheme: dark) { .play-btn { color: #14130f; } }
+    @media (max-width: 560px) {
+      .resource { flex-direction: column; align-items: center; gap: 22px; }
+      .resource-shot { flex-basis: auto; width: 180px; }
+    }
+
+    /* ---------- Footer ---------- */
+    footer { border-top: 1px solid var(--line); background: var(--surface); margin-top: 20px; }
+    footer .inner {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 40px 24px;
+      font-family: var(--sans);
+      font-size: 14.5px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+    footer .name { color: var(--text); font-weight: 600; }
+    footer .cols { display: flex; flex-wrap: wrap; gap: 40px 60px; justify-content: space-between; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="inner">
+      <div class="links">
+        <a href="/#about">About</a>
+        <a href="/#in-progress">In progress</a>
+        <a href="/#published">Published</a>
+        <a href="/#teaching">Teaching</a>
+        <a href="/#cv">CV</a>
+        <a href="/resources/" aria-current="page">Resources</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <header class="page-head">
+      <h1>Resources</h1>
+      <p>Teaching materials I have developed and use in my courses.</p>
+    </header>
+
+    <!-- ===================== SIMULATIONS ===================== -->
+    <section id="simulations">
+      <h2>Simulations</h2>
+
+      <article class="resource">
+        <a class="resource-shot" href="/higher-or-lower/" aria-label="Play LCA Higher or Lower">
+          <img src="/assets/lca-higher-or-lower.png" width="370" height="543"
+               alt="LCA Higher or Lower title screen: a red arrow pointing up and a green arrow pointing down. Which is worse? Wine or beer? Tofu or lentils?" />
+        </a>
+        <div>
+          <h3><a href="/higher-or-lower/">LCA Higher or Lower</a></h3>
+          <p class="meta">A game on the carbon footprint of everyday food and drink</p>
+          <p class="desc">Which is worse, wine or beer? Tofu or lentils? Each round shows two foods or drinks, and you pick the one with the higher carbon emissions per serving. The figures come from life cycle assessment (LCA): they cover the whole life of the product, from growing or rearing it to processing, packaging, transport, the shop, and keeping it at home.</p>
+          <p class="desc">I use it in my sustainability courses to show where the environmental impact of the products we use every day actually comes from, and how often our intuitions get it wrong.</p>
+          <p class="desc">You can also play a solo version at your own pace and test your knowledge.</p>
+          <a class="play-btn" href="/higher-or-lower/">Play the game →</a>
+          <p class="source">Data: AGRIBALYSE 3.2 (ADEME).</p>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="inner">
+      <div class="cols">
+        <div>
+          <span class="name">Nicola Misani</span><br />
+          Researcher with tenure<br />
+          Department of Management and Technology<br />
+          Università Bocconi
+        </div>
+        <div>
+          4th Floor, Room C2-04<br />
+          Via Roentgen 1<br />
+          20136 Milano, Italy<br />
+          <a href="mailto:nicola.misani@unibocconi.it">nicola.misani@unibocconi.it</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
